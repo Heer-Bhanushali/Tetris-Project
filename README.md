@@ -1,7 +1,7 @@
 # Tetris-Project
 A modern implementation of classic Tetris with real-time global leaderboard support, allowing multiple players to compete and share scores across different game instances.
 
-#✨ Features
+         ✨ Features
 
 🎯 Classic Tetris gameplay with smooth controls
 
@@ -15,7 +15,8 @@ A modern implementation of classic Tetris with real-time global leaderboard supp
 
 📊 Live leaderboard display during gameplay
 
-#🏗️ System Architecture
+         🏗️ System Architecture
+
 
 ┌─────────────────┐    ┌─────────────────────┐    ┌─────────────────┐
 │   Tetris        │    │   Leaderboard       │    │   Tetris        │
@@ -33,15 +34,20 @@ A modern implementation of classic Tetris with real-time global leaderboard supp
     └──────────┘             └───────────┘             └───────────┘
 
 
-    #📦 Installation
+         📦 Installation
     
 Prerequisites
+
 GCC compiler
+
 ncurses library
+
 Linux/Unix environment
 
 Step-by-Step Setup
+
 1. Clone the repository
+
    git clone https://github.com/yourusername/tetris-global-leaderboard.git
    cd tetris-global-leaderboard
 
@@ -54,14 +60,18 @@ Step-by-Step Setup
 This script will:
 
 Compile both server and client
+
 Detect your IP address automatically
+
 Configure network settings
+
 Provide ready-to-run commands
 
-#🚀 Running the Game
+         🚀 Running the Game
 
 Terminal 1 - Start the Leaderboard Server
   ./leaderboard_server
+
 Expected Output:
   Leaderboard Server started on port 8080
   Waiting for connections...
@@ -72,7 +82,7 @@ Terminal 2 - Start the Tetris Game
 Terminal 3+ (Optional) - Additional Players
   ./tetris
 
-#🎮 Controls
+         🎮 Controls
 
 Key	   Action
 ← →	   Move piece left/right
@@ -82,19 +92,20 @@ Space	 Hard drop (instant drop)
 P	     Pause game
 Q	     Quit game
 
-#🔧 Manual Compilation
+         🔧 Manual Compilation
+
 Compile the Leaderboard Server
     gcc -o leaderboard_server leaderboard_server.c
 Compile the Tetris Client
     gcc -o tetris tetris.c tetris_network.c -lncurses -lm -lpthread
 
-#🌐 Network Configuration
+         🌐 Network Configuration
 
 The project automatically configures network settings. For manual configuration, edit tetris_network.h:
   #define SERVER_IP "192.168.1.100"  // Replace with your server IP
   #define SERVER_PORT 8080
 
-#📊 Leaderboard Features
+         📊 Leaderboard Features
 
 Real-time top 10 scores display
 
@@ -106,10 +117,11 @@ Player identification system
 
 Persistent scoring during server runtime
 
-#🐛 Troubleshooting
+         🐛 Troubleshooting
 Common Issues & Solutions
 
 Server won't start:
+
 # Check if port 8080 is available
 netstat -tulpn | grep 8080
 
@@ -142,7 +154,7 @@ Run server with logging:
   ./leaderboard_server > server.log 2>&1 &
   tail -f server.log
 
-#🗂️ Project Structure
+         🗂️ Project Structure
 tetris-global-leaderboard/
 ├── tetris.c                 # Main game logic and rendering
 ├── tetris_network.c         # Network communication handling
@@ -151,7 +163,7 @@ tetris-global-leaderboard/
 ├── run_tetris.sh           # Automated build and setup script
 └── README.md               # Project documentation
 
-#🎯 Technical Details
+         🎯 Technical Details
 
 Protocol: Custom TCP-based communication
 
@@ -163,7 +175,7 @@ Data Format: Simple text-based protocol
 
 Threading: Multi-threaded server handling
 
-#🙏 Acknowledgments
+         🙏 Acknowledgments
 
 Inspired by classic Tetris game
 

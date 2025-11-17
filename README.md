@@ -84,13 +84,13 @@ Terminal 3+ (Optional) - Additional Players
 
          🎮 Controls
 
-Key	   Action
-← →	   Move piece left/right
-↑	     Rotate piece clockwise
-↓	     Soft drop (move down faster)
-Space	 Hard drop (instant drop)
-P	     Pause game
-Q	     Quit game
+          Key	     Action
+         ← →	     Move piece left/right
+         ↑	     Rotate piece clockwise
+         ↓	     Soft drop (move down faster)
+         Space	     Hard drop (instant drop)
+         P	     Pause game
+         Q	     Quit game
 
          🔧 Manual Compilation
 

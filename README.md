@@ -92,10 +92,12 @@ Terminal 3+ (Optional) - Additional Players
          P	     Pause game
          Q	     Quit game
 
+
+
          🔧 Manual Compilation
 
 Compile the Leaderboard Server
-    gcc -o leaderboard_server leaderboard_server.c
+         gcc -o leaderboard_server leaderboard_server.c
 Compile the Tetris Client
     gcc -o tetris tetris.c tetris_network.c -lncurses -lm -lpthread
 
